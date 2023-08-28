@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeWork4</title>
-</head>
-<body>
-    <script src="./js/script.js" ></script>
-</body>
+  </head>
+  <body>
+    <div data-widget-name="menu">Виберіть жанр</div>
+    <script>
+      let element = document.querySelector('[data-widget-name="menu"]');
+
+      if (element) {
+        let widget = element.getAttribute("data-widget-name");
+        console.log("Значення атрибута data-widget-name =",widget);
+      } else console.log("Немає елементу");
+      
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
